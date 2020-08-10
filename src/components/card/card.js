@@ -20,13 +20,13 @@ const Card = (props) => {
 
 Card.defaultProps = {
 	image: 'https://images-na.ssl-images-amazon.com/images/I/31yW7R1ccdL._AC_SY400_.jpg',
-	name: 'Film Title',
+	title: 'Film Title',
 	description: 'Film Description',
 };
 
 Card.propTypes = {
 	image: PropTypes.string,
-	name: PropTypes.string,
+	title: PropTypes.string,
 	description: PropTypes.string,
 };
 
