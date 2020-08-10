@@ -1,8 +1,12 @@
 import React from 'react';
 
+import Header from './header/header';
+import Grid from './grid/grid';
+
 const App = () => (
 	<div>
-		<h1>Hello world!!!!!</h1>
+		<Header />
+		<Grid />
 	</div>
 );
 
