@@ -1,10 +1,10 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-const Card = (props) => {
-	const { image, title, description } = props;
+const Card = ({image, title, description}) => {
 
 	return (
+		<article className="col-md-3">
 		<div className="card">
 			<img className="card-img-top" src={image} alt={title} />
 			<div className="card-body">
@@ -15,6 +15,7 @@ const Card = (props) => {
 				</a>
 			</div>
 		</div>
+		</article>
 	);
 };
 
