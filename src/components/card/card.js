@@ -1,20 +1,24 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-const Card = ({image, title, description}) => {
+import './card.sass';
 
+const Card = ({ image, title, description }) => {
 	return (
 		<article className="col-md-3">
-		<div className="card">
-			<img className="card-img-top" src={image} alt={title} />
-			<div className="card-body">
-				<h5 className="card-title">{title}</h5>
-				<p className="card-text">{description}</p>
-				<a href="#" className="btn btn-primary">
-					Watch film
+			<div className="card">
+				<a className="card__link">
+					<img
+						className="card__image card-img-top"
+						src="https://image.tmdb.org/t/p/w220_and_h330_face/v0eQLbzT6sWelfApuYsEkYpzufl.jpg"
+						alt={title}
+					/>
+					<div className="card__info card-body">
+						<h5 className="card__title card-title">{title}</h5>
+						<p className=" card__description card-text">{description}</p>
+					</div>
 				</a>
 			</div>
-		</div>
 		</article>
 	);
 };

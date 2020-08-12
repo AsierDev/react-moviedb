@@ -1,5 +1,7 @@
 import React from 'react';
 
+import './header.sass';
+
 const Header = () => {
 	return (
 		<>
@@ -38,7 +40,7 @@ const Header = () => {
 					</ul>
 				</div>
 			</nav>
-			<section className="search">
+			<section className="header__search">
 				<div className="container">
 					<form className="form">
 						<input className="form-control form-control-lg" type="text" placeholder="Search movie..." />

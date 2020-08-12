@@ -14,8 +14,6 @@ const Grid = ({}) => {
 			.catch((e) => console.error(e));
 	}, []);
 
-	console.log('movies => ', movies);
-
 	return (
 		<section className="container list">
 			<div className="row">
