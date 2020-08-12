@@ -2,7 +2,11 @@ import React from 'react';
 
 import './header.sass';
 
+import useSearch from '../useSearch';
+
 const Header = () => {
+	const { searchByTitle } = useSearch();
+
 	return (
 		<>
 			<nav className="navbar navbar-expand-lg navbar-dark bg-dark">
@@ -43,7 +47,12 @@ const Header = () => {
 			<section className="header__search">
 				<div className="container">
 					<form className="form">
-						<input className="form-control form-control-lg" type="text" placeholder="Search movie..." />
+						<input
+							onChange={searchByTitle}
+							className="form-control form-control-lg"
+							type="text"
+							placeholder="Search movie..."
+						/>
 					</form>
 				</div>
 			</section>

@@ -1,18 +1,12 @@
 import React, { useState, useEffect } from 'react';
+import useSearch from '../useSearch';
 
 import Card from '../card/card';
 
 const Grid = ({}) => {
-	const [movies, setMovies] = useState([]);
+	useEffect(() => {});
 
-	useEffect(() => {
-		fetch(
-			'https://api.themoviedb.org/3/movie/popular?api_key=7cdd6813e009397c594758fe7bce7b47&language=en-US&page=1'
-		)
-			.then((res) => res.json())
-			.then((res) => setMovies(res.results))
-			.catch((e) => console.error(e));
-	}, []);
+	const { movies } = useSearch();
 
 	return (
 		<section className="container list">
