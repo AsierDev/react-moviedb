@@ -10,7 +10,7 @@ const Card = ({ image, title, description }) => {
 				<a className="card__link">
 					<img
 						className="card__image card-img-top"
-						src="https://image.tmdb.org/t/p/w220_and_h330_face/v0eQLbzT6sWelfApuYsEkYpzufl.jpg"
+						src={`https://image.tmdb.org/t/p/original/${image}`}
 						alt={title}
 					/>
 					<div className="card__info card-body">
