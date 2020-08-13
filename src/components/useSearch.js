@@ -15,6 +15,7 @@ const useSearch = () => {
 
 	const searchByTitle = (event) => {
 		const { value } = event.target;
+
 		if (value && value.length > 2) {
 			fetch(
 				`https://api.themoviedb.org/3/search/movie?api_key=7cdd6813e009397c594758fe7bce7b47&language=en-US&query=${value}&page=1&include_adult=false`

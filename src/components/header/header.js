@@ -2,11 +2,7 @@ import React from 'react';
 
 import './header.sass';
 
-import useSearch from '../useSearch';
-
-const Header = () => {
-	const { searchByTitle } = useSearch();
-
+const Header = ({ onSearch }) => {
 	return (
 		<>
 			<nav className="navbar navbar-expand-lg navbar-dark bg-dark">
@@ -22,7 +18,7 @@ const Header = () => {
 					aria-expanded="false"
 					aria-label="Toggle navigation"
 				>
-					<span className="navbar-toggler-icon"></span>
+					<span className="navbar-toggler-icon" />
 				</button>
 				<div className="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
 					<ul className="navbar-nav mr-auto">
@@ -48,7 +44,7 @@ const Header = () => {
 				<div className="container">
 					<form className="form">
 						<input
-							onChange={searchByTitle}
+							onChange={onSearch}
 							className="form-control form-control-lg"
 							type="text"
 							placeholder="Search movie..."

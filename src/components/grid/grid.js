@@ -1,13 +1,8 @@
-import React, { useState, useEffect } from 'react';
-import useSearch from '../useSearch';
+import React from 'react';
 
 import Card from '../card/card';
 
-const Grid = ({}) => {
-	useEffect(() => {});
-
-	const { movies } = useSearch();
-
+const Grid = ({ movies }) => {
 	return (
 		<section className="container list">
 			<div className="row">
