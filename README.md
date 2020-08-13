@@ -1,1 +1,1 @@
-# react-omdb
+# react-moviedb
